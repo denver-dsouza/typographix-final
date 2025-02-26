@@ -66,13 +66,13 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         form.reset();
         const toast = document.getElementById("toast");
         toast.classList.add("show");
-        setTimeout(function(){ toast.classList.remove("show"); }, 10000);        
+        setTimeout(function(){ toast.classList.remove("show"); }, 5000);        
       } else {
         // Handle errors here
         alert('Form submission failed!');
     }
   })
   .catch(error => {
-      console.error('Error:', error);
+      console.error('Error: ', error);
   });
 });
