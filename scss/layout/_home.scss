@@ -1,4 +1,4 @@
-/* Home Section ----------------------------- */
+/* Home Section ----------------------- */
 .video-container {
     position: relative;
     z-index: -1;
@@ -34,6 +34,14 @@
                 color: white;
             }
         }
+
+        @include tablet-vertical {
+            font-size: 4rem;
+        }
+
+        @include smartphone-vertical {
+            font-size: 3.5rem;
+        }
     }
 
     p {
@@ -43,5 +51,4 @@
         font-size: clamp(1rem, 5vw, 1.5rem);
         font-weight: 200;
     }
-}
-
+} 
